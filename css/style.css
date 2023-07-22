@@ -1,0 +1,406 @@
+@import url(https://bellpro.cl/wp-content/uploads/2022/07/978-2.jpg);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+section {
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    width: 100%;
+    height: 100%;
+    background: url(https://img1.wallspic.com/crops/7/9/3/3/4/143397/143397-azul-graficos-arte-espacio-ambiente-2560x1600.jpg) no-repeat;
+
+    background-size: cover;
+    background-position: center;
+    animation: animateBg 5s linear infinite;
+}
+
+@keyframes animateBg {
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    background-color: rgb(65, 49, 141);
+}
+
+.navbar button {
+    color: #fff;
+    font-size: 3rem;
+    background-color: inherit;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+
+
+.bodyContainer {
+    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.login-box {
+    position: relative;
+    width: 400px;
+    height: fit-content;
+    padding: 1.2rem 0.8rem;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(15px);
+}
+
+h2 {
+    font-size: 1.4em;
+    color: #fff;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.input-box {
+    position: relative;
+    width: 310px;
+    margin: 30px 0;
+    /* border-bottom: 2px solid #fff; */
+}
+
+/* .input-box label {
+    position: absolute;
+    top: 5%;
+    left: 0px;
+    transform: translate(-50%);
+    font-size: 1em;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: -5px;
+} */
+
+.input-box input {
+    width: 100%;
+    background: transparent;
+    border: 2px solid #bbb;
+    outline: none;
+    font-size: 1em;
+    color: #fff;
+    padding: 0.4rem 0.8rem;
+}
+
+.input-box .icon {
+    position: absolute;
+    right: 8px;
+    color: #fff;
+    font-size: 1.2em;
+    line-height: 57px;
+}
+
+.remember-forgot {
+    margin: -15px 0 15 px;
+    font-size: .9em;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.remember-forgot label input {
+    margin-right: 3px;
+}
+
+input[ type=button] {
+    width: 100%;
+    height: 40px;
+    background: #fff;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #000;
+    font-weight: 500;
+}
+
+@media(max-width:360px) {
+    .login-box {
+        width: 100%;
+        height: 100vh;
+        border: none;
+        border-radius: 0;
+    }
+
+    .input-box {
+        width: 290px;
+    }
+}
+
+.botones {
+    left: 100%;
+    border: 50%;
+    width: 100%;
+    height: 10px;
+    align-items: center;
+    border: 50;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #000;
+    font-weight: 500;
+    text-align: right;
+
+
+}
+
+.wrap {
+    width: 100%;
+    max-width: 1000px;
+
+}
+
+
+.widget {
+    width: 100%;
+    max-width: 1000px;
+}
+
+.widget p {
+    display: inline-block;
+    line-height: 1em;
+}
+
+.fecha {
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 1em;
+    margin-bottom: 0.3125rem;
+    background: transparent;
+    width: 100%;
+    color: #fff;
+}
+
+.reloj {
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 0.3125rem;
+    background: transparent;
+    width: 100%;
+    color: #fff;
+}
+
+.reloj .caja-segundos {
+    display: inline-block;
+}
+
+.reloj .segundos,
+.reloj .ampm {
+    font-size: 0.9rem;
+    display: block;
+}
+
+.btn-neon {
+    position: relative;
+    display: flex;
+    padding: 4px 4px;
+    align-content: center;
+    letter-spacing: 3px;
+    font-size: 24px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.2s;
+    background: #fff;
+
+
+    border: #000;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 500;
+    text-align: center;
+
+}
+
+.btn-neon:hover {
+    background: #a945c7;
+    box-shadow: 1px #a945c7, 0 0 40px #a945c7, 0 0 80px #a945c7;
+    transition-delay: 1s;
+
+}
+
+.btn-neon span {
+    position: absolute;
+    display: block;
+}
+
+#span1 {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(800deg, transparent, #a945c7);
+}
+
+.btn-neon:hover #span1 {
+    left: 100%;
+    transition: 1s;
+}
+
+#span3 {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(800deg, transparent, #a945c7);
+}
+
+.btn-neon:hover #span3 {
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+
+#span2 {
+    top: 0;
+    right: -100%;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(800deg, transparent, #a945c7);
+}
+
+.btn-neon:hover #span2 {
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+#span4 {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(800deg, transparent, #a945c7);
+}
+
+.btn-neon:hover #span4 {
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+
+
+
+
+
+.secuencesContainer {
+    /* background-color: cadetblue; */
+    width: 100%;
+}
+
+.secuence {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* background-color: #000; */
+    box-shadow: 0 0 5px 1px #bbb;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    /* gap: 0.5rem; */
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.secuenceTime {
+    width: auto;
+    /* background-color: #a945c7; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.secuenceSteps {
+    width: 5rem;
+    /* background-color: #a945c7; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.inputsecuence {
+    background-color: #bbb;
+    padding: 0.2rem 0.5rem;
+    font-size: 1.2rem;
+    border: 1px solid #454545;
+    margin-top: 2px;
+}
+
+.buttonAdd {
+    border: 1px solid #000;
+    background-color: #ccc;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-size: 1rem;
+    color: rgb(6, 6, 78);
+}
+
+
+.secuenceAdded {
+    /* background-color: aqua; */
+    color: #bbb;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px dashed #bbb;
+    border-radius: 4px;
+    padding: 0.5rem;
+}
+
+
+.hidden {
+    /* display: none; */
+    opacity: 0.25;
+    border: 1px solid transparent;
+}
+
+.hide {
+    opacity: 0;
+}
+
+
+.animate__animated {
+    animation: bounce;
+    animation-duration: 1s;
+    /* animation-delay: 0.2s; */
+}
+
+.animate__animated.animate__bounceIn {
+    --animate-duration: 1s;
+}
+
+.animate__animated.animate__fadeOutUp {
+    --animation-duration: 1s;
+}
+
+.anianimate__bounce {
+    /* animation: infinite; */
+    --animation-duration: 5s;
+}

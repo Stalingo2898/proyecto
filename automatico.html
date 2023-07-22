@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IF=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1-0">
+    <title>DESARROLLO DE UN PROTOTIPO</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="login.js"></script>
+    <!-- <script src="reloj.js"></script> -->
+    <script src="index.js"></script>
+
+
+</head>
+
+<body>
+
+    <div class="navbar">
+        <button onclick="clickHome()">
+            <i class='bx bx-home'></i>
+        </button>
+    </div>
+
+    <section class="bodyContainer">
+
+        <div class="login-box">
+            <form action="">
+                <div class="wrap">
+                    <div class="widget">
+                        <div class="fecha">
+                            <p id="diaSemana" class="diaSemana"></p>
+                            <p id="dia" class="dia"></p>
+                            <p> de </P>
+                            <p id="mes" class="mes"></p>
+                            <p> del </P>
+                            <p id="year" class="year"></p>
+                        </div>
+                        <div class="reloj">
+                            <p id="horas" class="horas"></p>
+                            <p>:</p>
+                            <p id="minutos" class="minutos"></p>
+                            <p>:</p>
+                            <div class="caja-segundos">
+                                <p id="ampm" class="ampm"></p>
+                                <p id="segundos" class="segundos"></p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+                <h2>CONFIGURACION DE HORARIO </h2>
+
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="alarm"></ion-icon>
+                    </span>
+
+                    <div class="secuencesContainer" id="secuencesContainer">
+
+                        <div class="secuence">
+                            <div class="secuenceTime ">
+                                <label for="time"> HORA</label>
+                                <input type="time" id="time" class="inputsecuence">
+                            </div>
+                            <div class="secuenceSteps ">
+                                <label for="steps"> PASOS</label>
+                                <input type="number" id="steps" class="inputsecuence" max="7" min="1">
+                            </div>
+                            <button class="buttonAdd" id="buttonAdd">
+                                <i class='bx bx-plus'></i>
+                            </button>
+                        </div>
+
+                        <div class="secuencesList" id="secuencesList">
+                            <!-- <div class="secuenceAdded" id="0">
+                                <span>Hora: 10:00</span>
+                                <span>Pasos: 7</span>
+                                <button class="buttonAdd" id="buttonDel">
+                                    <i class='bx bx-minus'></i>
+                                </button>
+                            </div> -->
+                        </div>
+
+
+
+
+
+                    </div>
+
+
+                </div>
+
+
+                <!-- <input type="button" value="GUARDAR" id="savelist"> -->
+                </br>
+                </br>
+                </br>
+
+                
+            </form>
+
+        </div>
+    </section>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="reloj.js"></script>
+    <script src="automatico.js"></script>
+</body>
+
+</html>

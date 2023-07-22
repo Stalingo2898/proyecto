@@ -1,0 +1,82 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IF=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1-0">
+        <title>DESARROLLO DE UN PROTOTIPO</title>
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+
+        <script src="login.js"></script>
+        <script src="reloj.js"></script>
+        <script src="validar_automatico.js"></script>
+        <script src="validar_manual.js"></script>
+    </head>
+    
+    <body>
+       
+        
+        <section>
+            
+        <div class="login-box" >
+            <form action="">
+                <div class="wrap">
+                    <div class="widget">
+                        <div class="fecha">
+                            <p id="diaSemana" class="diaSemana"></p>
+                            <p id="dia" class="dia"></p>
+                            <p> de </P>
+                            <p id="mes" class="mes"></p>
+                            <p> del </P>
+                            <p id="year" class="year"></p>
+                        </div>
+                        <div class="reloj">
+                            <p id="horas" class="horas"></p>
+                            <p>:</p>
+                            <p id="minutos" class="minutos"></p>
+                            <p>:</p>
+                            <div class="caja-segundos">
+                                <p id="ampm" class="ampm"></p>
+                                <p id="segundos" class="segundos"></p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    
+
+                </div>
+                <h2>SELECCIONA </h2>
+            
+                
+                
+               
+            
+                <input  type="button" value="ENCENDER" id="submit" onclick="encender_dispositivo()">
+            </br>
+        </br>
+
+                <input  type="button" value="APAGAR" id="submit" onclick="apagar_dispositivo()">
+            </br>
+        </br>
+    </br>
+    
+                <a href="comida.html" class="btn-neon" >
+                    <span id="span1" ></span>
+                    <span id="span2" ></span>
+                    <span id="span3" ></span>
+                    <span id="span4" ></span>
+                    ¿Tipos de Comidas para Perros?
+                </a>
+            </form>
+
+        </div>
+    </section>
+    
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="reloj.js"></script>
+    </body>
+</html>
