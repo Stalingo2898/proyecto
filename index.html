@@ -1,117 +1,52 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html>
-
-<head>
-
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IF=edge">
-  <meta name="viewport" content="width=device-width,initial-scale=1-0">
-  <title>DESARROLLO DE UN PROTOTIPO</title>
-  <link href="css/style.css" rel="stylesheet" type="text/css">
-  <script src="login.js"></script>
-  <script src="reloj.js"></script>
-</head>
-
-<body>
-
-
-  <section class="bodyContainer">
-
-    <div class="login-box">
-      <form action="">
-        <div class="wrap">
-          <div class="widget">
-            <div class="fecha">
-              <p id="diaSemana" class="diaSemana"></p>
-              <p id="dia" class="dia"></p>
-              <p> de </P>
-              <p id="mes" class="mes"></p>
-              <p> del </P>
-              <p id="year" class="year"></p>
-            </div>
-            <div class="reloj">
-              <p id="horas" class="horas"></p>
-              <p>:</p>
-              <p id="minutos" class="minutos"></p>
-              <p>:</p>
-              <div class="caja-segundos">
-                <p id="ampm" class="ampm"></p>
-                <p id="segundos" class="segundos"></p>
-              </div>
-
-            </div>
-
-          </div>
-
-
-
-        </div>
-        <h2>COMEDERO AUTOMATIZADO </h2>
-        <h2>LOGIN</h2>
-        <div class="input-box">
-          <span class="icon">
-            <ion-icon name="mail"></ion-icon>
-          </span>
-          <input type="text" name="email" id="email" onkeyup="checkUpperCase(this.value)" value="stalin">
-          <p id="uppercase-message"></p>
-          <label>Usuario</label>
-        </div>
-        <div class="input-box">
-
-          <span class="icon">
-            <ion-icon name="lock-closed"></ion-icon>
-          </span>
-          <input type="password" name="password" id="password" onkeyup="checkUpperCases(this.value)" value="1234">
-          <p id="uppercase-messages"></p>
-          <label>Password</label>
-
-
-
-        </div>
-        <div class="remember-forgot">
-          <label><input type="checkbox">Recuerdame</label>
-
-        </div>
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IF=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1-0">
+        <title>DESARROLLO DE UN PROTOTIPO</title>
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <script src="login.js"></script>
+        <script src="validar_manual.js"></script>
+        <script src="validar_automatico.js"></script>
+        <script src="reloj.js"></script>
+    </head>
+    
+    <body>
+       
+        
+        <section class="bodyContainer">
+            
+        <div class="login-box" >
+            <form action="">
+                
+                <h2>¿COMO DESEAS DAR DE  </h2>
+                <h2>COMER A TU MASCOTA?  </h2>
+            </br>
         </br>
+    </br>
+                <input  type="button" value="MANUAL" id="submit" onclick="redirigir_manual()">
+            </br>
         </br>
-        <input type="button" value="login" id="submit" onclick="validate()">
-      </form>
+    
+            <input  type="button" value="AUTOMATICO" id="submit" onclick="redirigir_automatico()">
+        </br>
+    </br>
+</br>
+</br>
+</br>
+</br>
+</br>
+    
+                
+            </form>
 
-    </div>
-  </section>
-
-  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-  <script src="reloj.js"></script>
-  <script>
-    function checkUpperCase(value) {
-      var regex = /[A-Z,1-2-3-4-5-6-7-8-9]/;
-
-      if (regex.test(value)) {
-        // Se encontraron letras en mayúsculas, mostrar mensaje
-        document.getElementById('uppercase-message').textContent = 'El valor contiene letras en mayúsculas o numeros.';
-      } else {
-        // No se encontraron letras en mayúsculas, borrar mensaje
-        document.getElementById('uppercase-message').textContent = '';
-      }
-    }
-  </script>
-
-  <script>
-    function checkUpperCases(value) {
-      var regex = /[A-Z,a-z]/;
-
-      if (regex.test(value)) {
-        // Se encontraron letras en mayúsculas, mostrar mensaje
-        document.getElementById('uppercase-messages').textContent = 'El valor contiene letras.';
-      } else {
-        // No se encontraron letras en mayúsculas, borrar mensaje
-        document.getElementById('uppercase-messages').textContent = '';
-      }
-    }
-  </script>
-
-
-</body>
-
+        </div>
+    </section>
+    
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="reloj.js"></script>
+    </body>
 </html>
